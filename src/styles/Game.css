@@ -26,10 +26,8 @@ body {
 .stack {
     margin-top: 0px;
     width: 400px;
-    height: 400px;
+    height: 300px;
     position: relative;
-    outline: none;
-    border: none;
 }
 
 .next-level-button { 
@@ -57,7 +55,7 @@ body {
 .discard-placeholder {
     position: absolute;
     width: 80%;
-    height: 50%;
+    height: 65%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -133,9 +131,9 @@ p.back-level {
 
 .discard-pile { 
     width: 400px;
-    height: 400px;
+    height: 300px;
     position: relative;
-    left: -250px;
+    left: -200px;
     transform: rotate(30deg);
 }
 
@@ -144,8 +142,8 @@ p.back-level {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.card-discard:nth-child(2),
-.discard-placeholder {
+.discard-placeholder,
+.card-discard:nth-child(2) {
     --x: calc(-50% + 30px);
     --y: calc(-50% + 10px);
     transform: translate(var(--x), var(--y)) scale(0.9) rotateY(180deg);
@@ -179,7 +177,7 @@ p.back-level {
     }
 
     100% {
-        transform: rotate(30deg) rotateY(180deg) translate(280px, 400px) scale(1);
+        transform: rotate(30deg) rotateY(180deg) translate(250px, 350px) scale(1);
         z-index: 1;
     }
 }
@@ -192,7 +190,7 @@ p.back-level {
     }
 
     100% {
-        transform: translate(-180px, -650px) rotate(-30deg) scale(1.05);
+        transform: translate(-150px, -500px) rotate(-30deg) scale(1.05);
         z-index: 1;
     }
 }
