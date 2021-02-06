@@ -11,3 +11,7 @@ You can find it here: <https://chadohta.github.io/lets-talk/>
 ## Technologies Used
 
 * [React](https://github.com/facebook/create-react-app)
+
+## Other
+
+This project was inspired by [WERE NOT REALLY STRANGERS](https://www.werenotreallystrangers.com/).
