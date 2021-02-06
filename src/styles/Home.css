@@ -1,0 +1,64 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/imgs/lets-talk-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.home-container { 
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#titleBar, 
+.options-container,
+.levels-container {
+    display: block;
+}
+
+.title {
+    font-size: 55px;
+    padding: 10px;
+    color: white;
+    border: 2px solid #ffffff;
+}
+
+.play-option,
+.level-option,
+.back-button { 
+    display: block;
+    margin: 25px auto;
+    width: 150px;
+    height: 40px;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #c10016;
+    border: 0 solid black;
+    cursor: pointer;
+}
+
+.back-button { 
+    width: 100px;
+    background-color: rgb(125, 125, 125);
+}
+
+button:hover {
+    background-color: #9b0012;
+}
+
+.back-button:hover {
+    background-color: rgb(100, 100, 100);
+}
