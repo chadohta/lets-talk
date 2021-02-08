@@ -5,6 +5,7 @@ body {
     background-image: url("../assets/imgs/lets-talk-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 #home {

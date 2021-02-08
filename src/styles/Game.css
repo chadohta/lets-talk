@@ -1,14 +1,6 @@
-body {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
 .home-button,
 .next-level-button { 
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin: 50px auto 25px auto;
     width: 150px;
     height: 40px;
     border-radius:0.5rem;
@@ -24,7 +16,7 @@ body {
 }
 
 .stack {
-    margin-top: 0px;
+    margin: 0 auto;
     width: 400px;
     height: 300px;
     position: relative;
@@ -42,7 +34,7 @@ body {
 .card,
 .card-discard {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     transition: transform 500ms;
     transform-style: preserve-3d;
     cursor: pointer;
@@ -59,11 +51,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: grid;
-    justify-content: center;
-    align-items: center;
     color: #c10016;
-    text-align: center;
     font-weight: bold;
     font-size: 15px;
     border-radius: 2rem;
@@ -81,8 +69,13 @@ body {
     background-size: cover;
 }
 
-p.card-content {
-    margin: 30px;
+p.card-content,
+.card-content-back {
+    position: absolute;
+    width: 80%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .card__face--back {
@@ -92,7 +85,8 @@ p.card-content {
 }
 
 .card-content-back { 
-    text-transform: uppercase;   
+    text-transform: uppercase;
+    top: 50%;
 }
 
 p.back-option,
@@ -100,7 +94,7 @@ p.back-level {
     margin: 4px auto;
 }
 
-.back-option { 
+p.back-option { 
     font-size: 22px;
 }
 
@@ -132,14 +126,14 @@ p.back-level {
 .discard-pile { 
     width: 400px;
     height: 300px;
-    position: relative;
-    left: -200px;
-    transform: rotate(30deg);
+    margin: auto;
+    transform: translate(-35%, 10%) rotate(30deg);
 }
 
 .discard-placeholder {
     border: 2px solid grey;
     background-color: rgba(255, 255, 255, 0);
+    z-index: 0;
 }
 
 .discard-placeholder,
@@ -150,21 +144,21 @@ p.back-level {
 }
 
 .card-discard:nth-child(3) {
-    --x: calc(-50% + 15px);
+    --x: calc(-50% + 20px);
     --y: calc(-50%);
-    transform: translate(var(--x), var(--y)) scale(0.95) rotateY(180deg);
+    transform: translate(var(--x), var(--y)) scale(0.93) rotateY(180deg);
 }
 
 .card-discard:nth-child(4) {
-    --x: calc(-50% + 0px);
+    --x: calc(-50% + 10px);
     --y: calc(-50% + -10px);
-    transform: translate(var(--x), var(--y)) scale(1) rotateY(180deg);
+    transform: translate(var(--x), var(--y)) scale(0.96) rotateY(180deg);
 }
 
 .card-discard:nth-child(n + 5) {
-    --x: calc(-50% + -15px);
+    --x: calc(-50% + 0px);
     --y: calc(-50% + -20px);
-    transform: translate(var(--x), var(--y)) scale(1.05) rotateY(180deg);
+    transform: translate(var(--x), var(--y)) scale(0.99) rotateY(180deg);
 }
 
 .card-discard:nth-child(n + 6) .card__face {
@@ -177,20 +171,14 @@ p.back-level {
     }
 
     100% {
-        transform: rotate(30deg) rotateY(180deg) translate(250px, 350px) scale(1);
+        transform: rotate(30deg) rotateY(180deg) translate(180px, 335px) scale(1);
         z-index: 1;
     }
 }
 
 @keyframes reverse-flip {
-    50% {
-        --x: calc(-50% + 30px);
-        --y: calc(-50% + 10px);
-        transform: translate(var(--x), var(--y)) scale(1.05);
-    }
-
-    100% {
-        transform: translate(-150px, -500px) rotate(-30deg) scale(1.05);
+    to {
+        transform: rotate(-30deg) translate(45px, -550px) scale(1.05);
         z-index: 1;
     }
 }

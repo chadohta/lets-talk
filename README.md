@@ -8,6 +8,8 @@ A simple conversational card game.
 
 You can find it here: <https://chadohta.github.io/lets-talk/>
 
+*Currently working on fixing bugs in mobile view.*
+
 ## Technologies Used
 
 * [React](https://github.com/facebook/create-react-app)
