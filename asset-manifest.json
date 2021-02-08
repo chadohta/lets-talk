@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lets-talk/static/css/main.757d0a16.chunk.css",
+    "main.css": "/lets-talk/static/css/main.73b1d5c9.chunk.css",
     "main.js": "/lets-talk/static/js/main.7a2448f7.chunk.js",
     "main.js.map": "/lets-talk/static/js/main.7a2448f7.chunk.js.map",
     "runtime-main.js": "/lets-talk/static/js/runtime-main.d73aaf6d.js",
@@ -10,7 +10,7 @@
     "static/js/3.c5b7835a.chunk.js": "/lets-talk/static/js/3.c5b7835a.chunk.js",
     "static/js/3.c5b7835a.chunk.js.map": "/lets-talk/static/js/3.c5b7835a.chunk.js.map",
     "index.html": "/lets-talk/index.html",
-    "static/css/main.757d0a16.chunk.css.map": "/lets-talk/static/css/main.757d0a16.chunk.css.map",
+    "static/css/main.73b1d5c9.chunk.css.map": "/lets-talk/static/css/main.73b1d5c9.chunk.css.map",
     "static/js/2.090aba13.chunk.js.LICENSE.txt": "/lets-talk/static/js/2.090aba13.chunk.js.LICENSE.txt",
     "static/media/Game.css": "/lets-talk/static/media/card-bg.86c03dae.png",
     "static/media/Home.css": "/lets-talk/static/media/lets-talk-bg.b949b3eb.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.d73aaf6d.js",
     "static/js/2.090aba13.chunk.js",
-    "static/css/main.757d0a16.chunk.css",
+    "static/css/main.73b1d5c9.chunk.css",
     "static/js/main.7a2448f7.chunk.js"
   ]
 }
