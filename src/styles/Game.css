@@ -133,7 +133,6 @@ p.back-option {
 .discard-placeholder {
     border: 2px solid grey;
     background-color: rgba(255, 255, 255, 0);
-    z-index: 0;
 }
 
 .discard-placeholder,
@@ -180,5 +179,11 @@ p.back-option {
     to {
         transform: rotate(-30deg) translate(45px, -550px) scale(1.05);
         z-index: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .discard-placeholder { 
+        display: none;
     }
 }
